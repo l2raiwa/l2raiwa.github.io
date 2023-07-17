@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 20 20 20 20;
+      }
+      h2 {
+        font-size: x-large;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      li {
+        font-weight: bold;
+        padding-top: 10;
+      }
+
+      p {
+        font-weight: bold;
+      }
+      @media (max-width:768px) {
+        body {
+          font-size: large;
+        }
+        h1 {
+          font-weight: normal;
+        }
+      }
+      @media (max-width:375px){
+        body {
+          font-size: small;
+        }
+        p {
+          font-weight: normal;
+        }
+        li {
+          font-weight: normal;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      /*function isPrime(number) {
+        if (number < 2) {
+          return false; // First prime num = 2
+        }
+
+        for (let i = 2; i < number; i++) {
+          if (number % i === 0) {
+            // check if there are any numbers except 1 and itself is divisible.
+            return false;
+          }
+        }
+
+        return true;
+      }
+
+      function findPrimesInRange(maxNumber) {
+        const primes = []; //declare an Array
+
+        for (let i = 2; i <= maxNumber; i++) {
+          if (isPrime(i)) {
+            //check prime in range
+            primes.push(i);
+          }
+        }
+
+        return primes;
+      }
+      let checkMaxNum = true;
+      while (checkMaxNum) {
+        var maxNumber = parseInt(prompt("Enter the positive integer : "));
+        if (maxNumber % 2 == 0 && maxNumber > 0) {
+          checkMaxNum = false; //break while loop
+        } else {
+        }
+      }
+      var primeNumbers = findPrimesInRange(maxNumber);
+      alert("for n = " + maxNumber + " prime numbers are " + primeNumbers);
+    </script>
+    <h2>Prime Numbers Finder!</h2>
+    <h1>Write the web to prompt accepting for a positive integer number</h1>
+    <ul>
+      <li>
+        if the entered text is not a positive integer number, then the web app
+        will keep asking for a number until the valid positive integer is
+        entered
+      </li>
+      <li>
+        if the entered text is a positive integer, then the wep app will add
+        into a list of prime numbers
+      </li>
+    </ul>
+    <h1>Hint:</h1>
+    <p>1.You may want to use loop with label</p>
+    <p>2.You may want to use array with push function</p>
+  </body>
+</html>
