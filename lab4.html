@@ -1,0 +1,206 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiraphol-example</title>
+    <style>
+      html {
+        background-color: #fffacd;
+        font-family: "Caprasimo", cursive;
+      }
+
+      .bb {
+        border: darkgoldenrod;
+        border-style: dashed;
+        border-width: 3px;
+        justify-content: center;
+        padding-bottom: 30px;
+        background-color: DEB887;
+        margin: 0 20 20 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .centerText {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      h5 {
+        font-size: x-large;
+      }
+
+      ul {
+        margin-top: 30px;
+      }
+
+      .aa {
+        border: solid;
+        border-width: 10px;
+        margin: 0 100 100 100px;
+        background-color: FF7F50;
+      }
+
+      #heading {
+        color: blue;
+      }
+
+      .popular {
+        border: 4px dotted red;
+      }
+      @media (max-width: 375px) {
+        html {
+          font-size: xx-small;
+        }
+        .aa {
+          border-width: 3px;
+          margin: 0 20 20 20;
+          padding-bottom: 20;
+        }
+        .centerText {
+          margin: 0 0 0 0;
+        }
+        h5 {
+          font-size: small;
+          padding: 10 20;
+        }
+        .centerText {
+          width: 75%;
+        }
+        .bb {
+          margin: 10 10 10 10;
+          padding: 0 5 0 5;
+        }
+        li {
+          font-size: larger;
+          font-weight: bolder;
+        }
+        ul {
+          font-size: larger;
+        }
+        #credit {
+          font-size: large;
+        }
+        #cat1 {
+          display: block;
+        }
+      }
+      @media screen and (max-width: 667px) and (orientation: landscape) {
+        h1 {
+          display: none;
+        }
+        #cat1 {
+          display: none;
+        }
+        .aa {
+          margin: 0 10 20 10;
+        }
+        .bb {
+          display: contents;
+        }
+        #credit {
+          font-size: smaller;
+          padding: 0;
+        }
+        .centerText {
+          width: 80%;
+        }
+        ul {
+          font-size: smaller;
+        }
+        li {
+          font-weight: bolder;
+          font-size: 16px;
+        }
+        figure {
+          width: 40%;
+          justify-self: center;
+          margin: auto;
+          padding-top: 10;
+        }
+        h5 {
+          font-size: 18px;
+          margin-top: 0;
+        }
+      }
+      @media (min-width: 820px) {
+        html {
+          font-size: larger;
+          font-weight: bolder;
+        }
+        .centerText {
+          width: 90%;
+        }
+      }
+      @media screen and (max-width: 1180px) and (orientation: landscape) {
+        html {
+          font-size: large;
+        }
+        .bb {
+          height: 50%;
+        }
+        figure {
+          display: none;
+        }
+        ul {
+          font-size: 20;
+        }
+        li {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="aa">
+      <div class="bb">
+        <h1>My favorite type of CAT</h1>
+        <img
+          id="cat1"
+          src="img/exotic-shorthair-cat-2-half-years-old-18989794.webp"
+          alt="Exotic Shorthair Cat"
+          class="center"
+        />
+        <figure>
+          <img
+            src="img/Black Exotic Cat_ I want one!.jpg"
+            alt="elige.ru"
+            class="center"
+          />
+          <figcaption id="credit" style="text-align: center">
+            credit : elige.ru
+          </figcaption>
+        </figure>
+      </div>
+      <ul class="centerText">
+        <h3 id="heading">Overview (Exotic shorthair)</h3>
+        <p></p>
+        <li class="popular">
+          PERSONALITY: Affectionate, loyal, easygoing, low-energy
+        </li>
+        <p></p>
+        <li>LENGTH: Up to 30 inches</li>
+        <p></p>
+        <li class="popular">WEIGHT: Up to 15 pounds</li>
+      </ul>
+      <h5 class="centerText">
+        &nbsp;&nbsp;More information click
+        <a
+          href="https://www.bing.com/search?q=exotic+shorthair&aqs=edge.0.69i64i450l8.212420j0j1&FORM=ANNTA1&PC=NMTS"
+          >here</a
+        >
+      </h5>
+    </div>
+  </body>
+</html>
